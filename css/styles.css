@@ -1,0 +1,171 @@
+:root {
+  --black-color: #000;
+  --bronze-color: #CC9933;
+  --orange-color: #FFCC66;
+  --shade-gray-color: #666;
+  --white-color: #fff;
+  --dark-gray: #333;
+  --grey-color: #999;
+  --send-color: #A47312;
+  --white-gray-color: #ccc;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+select,
+fieldset {
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerLight'),
+    url('../fonts/MullerLight.woff2') format("woff2"),
+    url('../fonts/MullerLight.woff') format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerRegular'),
+    url('../fonts/MullerRegular.woff2') format("woff2"),
+    url('../fonts/MullerRegular.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerMedium'),
+    url('../fonts/MullerMedium.woff2') format("woff2"),
+    url('../fonts/MullerMedium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerBold'),
+    url('../fonts/MullerBold.woff2') format("woff2"),
+    url('../fonts/MullerBold.woff') format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  min-width: 1170px;
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: #E5E5E5;
+  color: var(--black-color)
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.btn {
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.btn:focus {
+  color: var(--white-color);
+  background-color: var(--bronze-color);
+  outline: none;
+}
+
+.btn:hover {
+  color: var(--white-color);
+  background-color: var(--bronze-color);
+}
+
+.btn:active {
+  color: var(--white-color);
+  background-color: var(--send-color);
+}
+
+.link {
+  transition: color .2s ease-in-out;
+}
+
+.link:focus {
+  color: var(--bronze-color);
+  outline: 1px solid var(--bronze-color);
+  outline-offset: 3px;
+}
+
+.link:hover {
+  color: var(--bronze-color);
+}
+
+.link:active {
+  color: var(--send-color);
+}
+
+.link--white {
+  transition: color .2s ease-in-out;
+}
+
+.link--white:focus {
+  outline: 1px solid var(--bronze-color);
+  outline-offset: 3px;
+}
+
+.link--white:hover {
+  color: #E9C379;
+}
+
+.link--white:active {
+  color: var(--send-color);
+}
+
+.item:focus-within {
+  outline: 3px solid var(--bronze-color);
+  outline-offset: 5px;
+}
